@@ -1,7 +1,35 @@
+:root {
+    --bg: #212529;
+    --surface: #343A40;
+    --surface-hover: #495057;
+    --text: #F8F9FA;
+    --button: #495057;
+}
+
 nav {
     text-align: center;
     height: 50px;
     width: 100%;
-    background-color: #333;
-    color: blue;
+    background-color: var(--surface);
+    border: 1px solid var(--surface-hover);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+nav a {
+    font-family: "Bitcount Prop Single", system-ui;
+    display: inline-block;
+    padding: 8px;
+    margin: 5px;
+    color: var(--text);
+    background-color: var(--button);
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Bitcount Prop Single", system-ui;
+    background-color: var(--bg);
+    color: var(--text);
+    text-align: center;
 }
