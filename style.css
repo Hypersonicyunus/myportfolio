@@ -3,7 +3,18 @@
     --surface: #343A40;
     --surface-hover: #495057;
     --text: #F8F9FA;
+    --secondarytext: #CED4DA;
+    --mutedtext: #ADB5BD;
     --button: #495057;
+}
+
+@keyframes carouselaround {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
 @keyframes slideUpAnimation {
@@ -47,6 +58,35 @@ h1 {
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: both;
-    font-size: 100px;
-    font-weight: 350;
+    font-size: 140px;
+    font-weight: 250;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+h2 {
+    animation-name: slideUpAnimation;
+    animation-duration: 1.2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    font-size: 40px;
+    font-weight: 200;
+    padding-top: 100px;
+    padding-bottom: 400px;  
+}
+
+#imagecarousel {
+    overflow: hidden;
+}
+
+#imagestrip {
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--mutedtext);
+    padding-bottom: 300px;
+    animation: carouselaround 20s linear infinite;
+    gap: 1rem;
 }
