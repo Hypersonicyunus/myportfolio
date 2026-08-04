@@ -59,7 +59,7 @@ h1 {
     animation-direction: normal;
     animation-fill-mode: both;
     font-size: 140px;
-    font-weight: 250;
+    font-weight: 300;
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -72,7 +72,7 @@ h2 {
     animation-direction: normal;
     animation-fill-mode: both;
     font-size: 40px;
-    font-weight: 200;
+    font-weight: 300;
     padding-top: 100px;
     padding-bottom: 400px;  
 }
