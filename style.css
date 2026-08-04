@@ -58,10 +58,10 @@ h1 {
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: both;
-    font-size: 140px;
+    font-size: clamp(1.5rem, 7vw, 10rem);
     font-weight: 300;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: clamp(0.5rem, 3vw, 10rem);
+    padding-bottom: clamp(1rem, 6vw, 115rem);
 }
 
 h2 {
@@ -71,10 +71,9 @@ h2 {
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: both;
-    font-size: 40px;
+    font-size: clamp(0.5rem, 3vw, 10rem);;
     font-weight: 300;
-    padding-top: 100px;
-    padding-bottom: 400px;  
+    padding-bottom: clamp(10rem, 14vw, 180rem);  
 }
 
 #imagecarousel {
@@ -87,6 +86,6 @@ h2 {
 #imagestrip {
     display: flex;
     padding-bottom: 300px;
-    animation: carouselaround 20s linear infinite;
+    animation: carouselaround 5s linear infinite;
     gap: 1rem;
 }
