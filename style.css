@@ -22,27 +22,6 @@
     100% { transform: translateY(0); opacity: 1; }
 }
 
-nav {
-    text-align: center;
-    height: 50px;
-    width: 100%;
-    background-color: var(--surface);
-    border: 1px solid var(--surface-hover);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-}
-
-nav a {
-    font-family: "Bitcount Prop Single", system-ui;
-    display: inline-block;
-    padding: 8px;
-    margin: 5px;
-    color: var(--text);
-    background-color: var(--button);
-    border-radius: 8px;
-    text-decoration: none;
-}
-
 body {
     font-family: "Bitcount Prop Single", system-ui;
     background-color: var(--bg);
@@ -60,32 +39,37 @@ h1 {
     animation-fill-mode: both;
     font-size: clamp(1.5rem, 7vw, 10rem);
     font-weight: 300;
-    padding-top: clamp(0.5rem, 3vw, 10rem);
-    padding-bottom: clamp(1rem, 6vw, 115rem);
+    text-align: center;
+    margin-right: 20rem;
+    margin-left: 20rem;
+    background-color: var(--surface);
+    border: 1px solid var(--surface-hover);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
 
 h2 {
     animation-name: slideUpAnimation;
-    animation-duration: 1.2s;
+    animation-duration: 1.65s;
     animation-timing-function: ease;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: both;
-    font-size: clamp(0.5rem, 3vw, 10rem);;
-    font-weight: 300;
-    padding-bottom: clamp(10rem, 14vw, 180rem);  
+    font-size: clamp(0.5rem, 3vw, 10rem);
+    font-weight: 300;  
+    margin-bottom: auto;
 }
 
-#imagecarousel {
-    overflow: hidden;
-    font-size: 20px;
-    font-weight: 100;
-    color: var(--mutedtext);
+#about {
+    background-color: var(--surface);
+    border-radius: 8px;
+    padding: 8px;
+    margin: 3rem;
 }
 
-#imagestrip {
-    display: flex;
-    padding-bottom: 300px;
-    animation: carouselaround 5s linear infinite;
-    gap: 1rem;
+#projects {
+    background-color: var(--surface);
+    border-radius: 8px;
+    padding: 8px;
+    margin: 3rem;
 }
