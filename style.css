@@ -8,6 +8,7 @@
     --button: #495057;
 }
 
+
 @keyframes carouselaround {
     from {
         transform: translateX(-50%);
@@ -29,19 +30,34 @@ body {
     text-align: center;
 }
 
+html {font-size: 100%;} /* 16px */
 
-h1 {
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+
+header{
     animation-name: slideUpAnimation;
     animation-duration: 1.2s;
     animation-timing-function: ease;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: both;
-    font-size: clamp(1.5rem, 7vw, 10rem);
     font-weight: 300;
     text-align: center;
-    margin-right: 20rem;
-    margin-left: 20rem;
+    margin-top: 4rem;
+    margin: auto;
+    width: fit-content;
+    padding: 1rem;
     background-color: var(--surface);
     border: 1px solid var(--surface-hover);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -55,21 +71,64 @@ h2 {
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: both;
-    font-size: clamp(0.5rem, 3vw, 10rem);
-    font-weight: 300;  
-    margin-bottom: auto;
+    font-weight: 300;
+    margin-top: 30vh;  
+    margin-bottom: 30vh;
 }
 
-#about {
+.Container {
     background-color: var(--surface);
     border-radius: 8px;
     padding: 8px;
     margin: 3rem;
 }
 
-#projects {
+#ProjectsTitle {
+    background-color: var(--surface);
+    border: 1px solid var(--surface-hover);
+    padding: 1rem;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    border-radius: 8px;
+}
+#ProjectArea {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-left: 2rem;
+}
+
+.ProjectCard {
     background-color: var(--surface);
     border-radius: 8px;
-    padding: 8px;
-    margin: 3rem;
+    width: fit-content;
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    aspect-ratio: 1 / 1;
+    max-height: 40rem;
+}
+
+.ProjectCard img{
+    border-radius: 8px;
+    justify-content: center;
+    object-fit: cover;
+    height: 200px;
+    margin: auto;
+}
+
+.ProjectCard a {
+    color: var(--mutedtext);
+    margin: 0 auto;
+}
+
+.ProjectCard h3 {
+    background-color: var(--button);
+    border-radius: 8px;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 14px;
 }
