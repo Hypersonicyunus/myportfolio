@@ -99,7 +99,16 @@ h2 {
     margin-left: 2rem;
 }
 
+#ProjectsTitle {
+    margin-bottom: 4rem;
+}
+
 .ProjectCard {
+    animation-name: slideUpAnimation;
+    animation-duration: 1.2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
     background-color: var(--surface);
     border-radius: 8px;
     width: fit-content;
@@ -120,7 +129,7 @@ h2 {
     margin: auto;
 }
 
-.ProjectCard a {
+.ProjectLink {
     color: var(--mutedtext);
     margin: 0 auto;
 }
@@ -131,4 +140,8 @@ h2 {
     width: fit-content;
     margin: 0 auto;
     padding: 14px;
+}
+
+.ProjectDescription {
+    text-align: center;
 }
