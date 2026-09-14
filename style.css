@@ -54,8 +54,11 @@ header{
     animation-fill-mode: both;
     font-weight: 300;
     text-align: center;
-    margin-top: 4rem;
-    margin: auto;
+    margin-top: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    align-content: center;
     width: fit-content;
     padding: 1rem;
     background-color: var(--surface);
@@ -93,6 +96,7 @@ h2 {
     border-radius: 8px;
 }
 #ProjectArea {
+    align-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
@@ -101,6 +105,12 @@ h2 {
 
 #ProjectsTitle {
     margin-bottom: 4rem;
+}
+
+#about {
+    margin-bottom: 20rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 .ProjectCard {
